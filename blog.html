@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>บทความ Excel เคล็ดลับและสูตร — Excel Espresso</title>
+  <meta name="description" content="บทความ Excel ภาษาไทย เคล็ดลับ สูตร วิธีใช้งานจริง สำหรับคนทำงานออฟฟิศ เจ้าของร้าน และมือใหม่">
+  <link rel="canonical" href="https://excelespresso.com/pages/blog.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800&family=Sarabun:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <header class="site-header" role="banner"><nav class="nav-wrapper" aria-label="เมนูหลัก"><a href="../index.html" class="nav-logo"><span class="logo-icon">☕</span><span class="logo-text">Excel Espresso</span></a><div class="nav-links" id="nav-links"><a href="start-here.html">เริ่มตรงนี้</a><a href="templates.html">เทมเพลต</a><a href="blog.html" class="active">บทความ</a><a href="about.html">เกี่ยวกับ</a><a href="contact.html">ติดต่อ</a><a href="templates.html" class="btn btn-primary btn-sm nav-cta">ดาวน์โหลดเทมเพลตฟรี</a></div><button class="nav-toggle" id="nav-toggle" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button></nav><div class="nav-overlay"></div></header>
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>บทความ</h1>
+        <p>เคล็ดลับ Excel ที่ใช้ได้จริง จากประสบการณ์ทำงานจริง</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="filters-bar">
+          <div class="filters-row">
+            <div class="filter-group" style="flex:2;">
+              <label for="blog-search">ค้นหาบทความ</label>
+              <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="search" id="blog-search" placeholder="พิมพ์คำค้นหา..." aria-label="ค้นหาบทความ">
+              </div>
+            </div>
+            <div class="filter-group">
+              <label for="blog-filter-category">หมวด</label>
+              <select id="blog-filter-category" aria-label="กรองตามหมวด">
+                <option value="">ทั้งหมด</option>
+                <option value="สต็อก">สต็อก</option>
+                <option value="งบประมาณ">งบประมาณ</option>
+                <option value="รายงานประจำสัปดาห์">รายงานประจำสัปดาห์</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="cards-grid" id="blog-grid">
+          <div class="no-results"><div class="icon">⏳</div><p>กำลังโหลดบทความ...</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" role="contentinfo"><div class="container"><div class="footer-grid"><div class="footer-brand"><div class="logo-text"><span>☕</span> Excel Espresso</div><p>Excel ง่ายๆสำหรับทุกคน</p></div><div><h4>เทมเพลต</h4><ul><li><a href="templates/templates-inventory.html">สต็อก</a></li><li><a href="templates/templates-budget.html">งบประมาณ</a></li><li><a href="templates/templates-weekly-report.html">รายงาน</a></li></ul></div><div><h4>เรียนรู้</h4><ul><li><a href="start-here.html">เริ่มตรงนี้</a></li><li><a href="blog.html">บทความ</a></li><li><a href="about.html">เกี่ยวกับเรา</a></li></ul></div><div><h4>อื่นๆ</h4><ul><li><a href="contact.html">ติดต่อเรา</a></li><li><a href="privacy.html">ความเป็นส่วนตัว</a></li><li><a href="terms.html">ข้อกำหนด</a></li></ul></div></div><div class="footer-bottom"><span>© 2025 Excel Espresso</span><span>ทำด้วย ☕</span></div></div></footer>
+  <script>
+  window._postsData = [
+    {
+      "id": "inventory-reorder-basics",
+      "slug": "blog/blog-inventory-reorder-basics.html",
+      "title": "จุดสั่งซื้อซ้ำ (Reorder Point) คืออะไร? ทำ Excel ใน 10 นาที",
+      "excerpt": "เคยเจอปัญหาของหมดแล้วไม่รู้ตัว? มาเรียนรู้วิธีตั้งจุดสั่งซื้อซ้ำแบบง่ายๆ ด้วย Excel ที่ใครก็ทำได้",
+      "category": "สต็อก",
+      "date": "18 ม.ค. 2568",
+      "readTime": "5 นาที",
+      "image": ""
+    },
+    {
+      "id": "budget-simple-system",
+      "slug": "blog/blog-budget-simple-system.html",
+      "title": "ระบบงบประมาณง่ายๆ ที่ทำให้เงินไม่รั่ว — ใช้ Excel แค่ 3 ชีท",
+      "excerpt": "หยุดเดาว่าเงินหายไปไหน สร้างระบบงบประมาณรายเดือนที่ชัดเจน สรุปได้ทุกสิ้นเดือน",
+      "category": "งบประมาณ",
+      "date": "25 ม.ค. 2568",
+      "readTime": "7 นาที",
+      "image": ""
+    },
+    {
+      "id": "weekly-report-fast",
+      "slug": "blog/blog-weekly-report-fast.html",
+      "title": "สรุปรายงานสัปดาห์ใน 5 นาที — ไม่ต้องนั่งพิมพ์ใหม่ทุกรอบ",
+      "excerpt": "เบื่อไหมที่ต้องนั่งทำรายงานสัปดาห์ทุกวันศุกร์? มาดูวิธีอัตโนมัติที่กรอกแค่ข้อมูลแล้ว Excel สรุปให้",
+      "category": "รายงานประจำสัปดาห์",
+      "date": "3 ก.พ. 2568",
+      "readTime": "6 นาที",
+      "image": ""
+    }
+  ];
+  </script>
+  <script src="../scripts/main.js"></script>
+</body>
+</html>

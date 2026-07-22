@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สรุปรายงานประจำสัปดาห์ใน 10 นาทีด้วย Excel — Excel Espresso</title>
+  <meta name="description" content="สอนทำรายงานสรุปประจำสัปดาห์ใน Excel ให้เสร็จใน 10 นาที ด้วยสูตรอัตโนมัติและเทมเพลตฟรี">
+  <meta property="og:title" content="สรุปรายงานประจำสัปดาห์ใน 10 นาทีด้วย Excel — Excel Espresso">
+  <meta property="og:description" content="สอนทำรายงานสรุปประจำสัปดาห์ใน Excel ให้เสร็จใน 10 นาที">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="../../assets/og-image.png">
+  <link rel="canonical" href="https://excelespresso.com/pages/blog/blog-weekly-report-fast.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800&family=Sarabun:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../../styles/main.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <nav class="nav-wrapper" aria-label="เมนูหลัก">
+      <a href="../../index.html" class="nav-logo" aria-label="Excel Espresso หน้าแรก">
+        <span class="logo-icon">☕</span>
+        <span class="logo-text">Excel Espresso</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="../start-here.html">เริ่มตรงนี้</a>
+        <a href="../templates.html">เทมเพลต</a>
+        <a href="../blog.html" class="active">บทความ</a>
+        <a href="../about.html">เกี่ยวกับ</a>
+        <a href="../contact.html">ติดต่อ</a>
+        <a href="../templates.html" class="btn btn-primary btn-sm nav-cta">ดาวน์โหลดเทมเพลตฟรี</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </nav>
+    <div class="nav-overlay" id="nav-overlay"></div>
+  </header>
+
+  <main>
+    <!-- Breadcrumb -->
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../../index.html">หน้าแรก</a>
+        <span aria-hidden="true">›</span>
+        <a href="../blog.html">บทความ</a>
+        <span aria-hidden="true">›</span>
+        <span>สรุปรายงานสัปดาห์ใน 10 นาที</span>
+      </nav>
+    </div>
+
+    <!-- Article -->
+    <article class="article-page">
+      <div class="container">
+        <!-- Article Header -->
+        <header class="article-header">
+          <div class="article-meta">
+            <span class="tag tag-report">รายงานประจำสัปดาห์</span>
+            <time datetime="2025-02-01">1 กุมภาพันธ์ 2025</time>
+            <span>อ่าน 4 นาที</span>
+          </div>
+          <h1>สรุปรายงานประจำสัปดาห์ใน 10 นาทีด้วย Excel</h1>
+          <p class="article-excerpt">หมดเวลากับการทำรายงานทั้งบ่าย — ตั้งระบบครั้งเดียวแล้วสรุปรายงานได้ทุกสัปดาห์ภายใน 10 นาที</p>
+        </header>
+
+        <!-- Article Image Placeholder -->
+        <div class="article-hero-image">
+          <div class="placeholder-image placeholder-image-lg">
+            <span>📊 รูปประกอบ: ตัวอย่างรายงานสรุปประจำสัปดาห์</span>
+          </div>
+        </div>
+
+        <div class="article-layout">
+          <!-- Article Body -->
+          <div class="article-body">
+
+            <!-- ปัญหา -->
+            <section class="article-section">
+              <h2>ปัญหาที่เจอบ่อย</h2>
+              <p>ทุกวันศุกร์ต้องรวบรวมข้อมูลจากหลายที่ พิมพ์รายงานใหม่ทุกสัปดาห์ ใช้เวลาครึ่งวันกว่าจะเสร็จ แถมฟอร์แมตไม่เหมือนกันเลยแต่ละครั้ง</p>
+              <p>หัวหน้าก็อยากได้ตัวเลขเร็ว แต่ทุกทีต้องมานั่งก๊อปข้อมูล จัดรูปแบบ ทำกราฟ — งานซ้ำซากที่กิน productivity ไปเยอะมาก</p>
+            </section>
+
+            <!-- วิธีแก้เร็ว -->
+            <section class="article-section">
+              <h2>วิธีแก้เร็ว: เทมเพลตรายงานอัตโนมัติ</h2>
+              <p>หลักการคือ: แยก "ชีทกรอกข้อมูล" กับ "ชีทแสดงผล" ออกจากกัน</p>
+              <div class="formula-box">
+                <code>ชีทข้อมูลดิบ → สูตรดึงข้อมูล → ชีทรายงานสรุป (พร้อมส่ง)</code>
+                <p>แค่กรอกตัวเลขในชีทข้อมูล รายงานจะอัปเดตตัวเองอัตโนมัติ ไม่ต้องทำใหม่ทุกสัปดาห์</p>
+              </div>
+            </section>
+
+            <!-- ขั้นตอนทำ -->
+            <section class="article-section">
+              <h2>ขั้นตอนทำทีละสเต็ป</h2>
+
+              <div class="step-block">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h3>สร้างชีท "ข้อมูลดิบ"</h3>
+                  <p>สร้างตารางสำหรับกรอกข้อมูลรายวัน: วันที่ | งานที่ทำ | สถานะ (เสร็จ/กำลังทำ/ค้าง) | หมายเหตุ</p>
+                  <div class="placeholder-image">
+                    <span>📸 รูป: ชีทข้อมูลดิบตัวอย่าง</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-block">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h3>สร้างชีท "KPI"</h3>
+                  <p>สร้างตารางตัวเลขสำคัญ: ชื่อ KPI | เป้า | ยอดจริง | % สำเร็จ — ใส่ KPI ที่ต้องรายงานทุกสัปดาห์</p>
+                </div>
+              </div>
+
+              <div class="step-block">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h3>สร้างชีท "รายงานสรุป"</h3>
+                  <p>ชีทนี้ดึงข้อมูลจากชีทอื่นมาแสดงผลอัตโนมัติ:</p>
+                  <div class="formula-box">
+                    <code>=COUNTIF(ข้อมูลดิบ!C:C,"เสร็จ")</code>
+                    <p>นับจำนวนงานที่เสร็จในสัปดาห์นี้</p>
+                  </div>
+                  <div class="formula-box" style="margin-top: 0.5rem;">
+                    <code>=COUNTIF(ข้อมูลดิบ!C:C,"ค้าง")</code>
+                    <p>นับจำนวนงานที่ยังค้างอยู่</p>
+                  </div>
+                  <div class="placeholder-image">
+                    <span>📸 รูป: ชีทรายงานสรุปที่ดึงข้อมูลอัตโนมัติ</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-block">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                  <h3>เพิ่มกราฟสรุปอัตโนมัติ</h3>
+                  <p>สร้าง Bar Chart จากข้อมูล KPI — กราฟจะอัปเดตอัตโนมัติตามข้อมูลที่กรอก</p>
+                  <div class="placeholder-image">
+                    <span>📸 รูป: กราฟ KPI สรุปรายสัปดาห์</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-block">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                  <h3>ตั้งค่าให้พร้อมใช้ซ้ำ</h3>
+                  <p>เพิ่มเซลล์ "สัปดาห์ที่" ที่ด้านบนรายงาน แล้วใช้ Data Validation เป็น dropdown — ทุกสัปดาห์แค่เปลี่ยนสัปดาห์ ข้อมูลก็อัปเดต</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- สูตร/ทริค -->
+            <section class="article-section">
+              <h2>สูตร / ทริคที่ใช้</h2>
+              <div class="formula-box">
+                <code>=TEXT(TODAY(),"DD/MM/YYYY")</code>
+                <p>แสดงวันที่ปัจจุบันในรายงานอัตโนมัติ — ไม่ต้องพิมพ์วันที่เองทุกสัปดาห์</p>
+              </div>
+              <div class="formula-box" style="margin-top: 1rem;">
+                <code>=CONCATENATE("สัปดาห์ที่ ",WEEKNUM(TODAY())," ปี ",YEAR(TODAY()))</code>
+                <p>สร้างหัวรายงานอัตโนมัติ เช่น "สัปดาห์ที่ 5 ปี 2025"</p>
+              </div>
+            </section>
+
+            <!-- ข้อผิดพลาดที่พบบ่อย -->
+            <section class="article-section">
+              <h2>ข้อผิดพลาดที่พบบ่อย</h2>
+              <div class="mistake-box">
+                <p>❌ <strong>ไม่แยกชีทข้อมูลกับชีทรายงาน</strong> — ถ้ารวมทุกอย่างไว้ชีทเดียว จะแก้ไขยากและรายงานจะรก ให้แยกชัดเจน</p>
+              </div>
+              <div class="mistake-box" style="margin-top: 0.75rem;">
+                <p>❌ <strong>ใส่ข้อมูลเยอะเกินไป</strong> — รายงานสรุปไม่ต้องมีทุกอย่าง เลือกแค่ 3-5 ตัวเลขสำคัญที่หัวหน้าต้องเห็น</p>
+              </div>
+              <div class="mistake-box" style="margin-top: 0.75rem;">
+                <p>❌ <strong>ลืมล็อกสูตร</strong> — ก่อนส่งไฟล์ให้คนอื่น ให้ Protect Sheet ชีทรายงานสรุปไว้ กันคนเผลอแก้สูตร</p>
+              </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="article-section article-cta-section">
+              <div class="article-cta-box">
+                <h2>ดาวน์โหลดเทมเพลตที่เกี่ยวข้อง</h2>
+                <p>เทมเพลต "ตัวสร้างรายงานประจำสัปดาห์" — มีชีทข้อมูล ชีท KPI และชีทรายงานสรุปพร้อมกราฟอัตโนมัติ</p>
+                <a href="../templates/template-weekly-report-generator-v1.html" class="btn btn-accent btn-lg">ดูเทมเพลตฟรี</a>
+              </div>
+            </section>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="article-sidebar">
+            <div class="sidebar-card">
+              <h3>เทมเพลตที่เกี่ยวข้อง</h3>
+              <a href="../templates/template-weekly-report-generator-v1.html" class="sidebar-template-link">
+                <span class="sidebar-template-icon">📋</span>
+                <span>ตัวสร้างรายงานประจำสัปดาห์ V1</span>
+              </a>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>บทความอื่นที่น่าสนใจ</h3>
+              <ul class="sidebar-links">
+                <li><a href="blog-inventory-reorder-basics.html">Reorder Point คืออะไร?</a></li>
+                <li><a href="blog-budget-simple-system.html">งบประมาณแบบง่ายที่ใครก็ทำได้</a></li>
+              </ul>
+            </div>
+
+            <div class="sidebar-card sidebar-newsletter">
+              <h3>รับเทมเพลตใหม่ก่อนใคร</h3>
+              <p>กรอกอีเมลเพื่อรับแจ้งเตือนเมื่อมีเทมเพลตใหม่</p>
+              <div class="sidebar-email-form">
+                <input type="email" placeholder="อีเมลของคุณ" aria-label="อีเมลสำหรับรับข่าวสาร">
+                <a href="mailto:hello@excelespresso.com?subject=สมัครรับข่าว" class="btn btn-primary btn-sm">สมัคร</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text"><span>☕</span> Excel Espresso</div>
+          <p>Excel ง่ายๆสำหรับทุกคน — เทมเพลตฟรีที่ใช้งานได้จริง ทำงานไวแล้วไปพักดื่มเอสเปรสโซ</p>
+        </div>
+        <div>
+          <h4>เทมเพลต</h4>
+          <ul>
+            <li><a href="../templates/templates-inventory.html">สต็อก</a></li>
+            <li><a href="../templates/templates-budget.html">งบประมาณ</a></li>
+            <li><a href="../templates/templates-weekly-report.html">รายงานประจำสัปดาห์</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>เรียนรู้</h4>
+          <ul>
+            <li><a href="../start-here.html">เริ่มตรงนี้</a></li>
+            <li><a href="../blog.html">บทความ</a></li>
+            <li><a href="../about.html">เกี่ยวกับเรา</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>อื่นๆ</h4>
+          <ul>
+            <li><a href="../contact.html">ติดต่อเรา</a></li>
+            <li><a href="../privacy.html">นโยบายความเป็นส่วนตัว</a></li>
+            <li><a href="../terms.html">ข้อกำหนดการใช้งาน</a></li>
+            <li><a href="../templates/template-license.html">สัญญาอนุญาตเทมเพลต</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Excel Espresso — สงวนลิขสิทธิ์</span>
+        <span>ทำด้วย ☕ สำหรับคนทำงานทุกคน</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../scripts/main.js"></script>
+</body>
+</html>
