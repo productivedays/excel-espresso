@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /design-guide.html
-
-Sitemap: https://excelespresso.com/sitemap.xml
